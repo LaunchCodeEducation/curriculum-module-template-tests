@@ -13,12 +13,10 @@ Code Block tests
 ================
 Code block with no syntax highlighting::
 
-   string sayHello(){
-    return "Hello World";
-   }
+    string HelloWorld;
+    int numberoftimes = 17;
 
-  sayHello()
-
+    console.log(numberoftimes * HelloWorld);
 
 Code block with syntax highlighting:
 
