@@ -33,4 +33,4 @@ Aside box
 Oftentimes, we will use aside boxes in our curriculum.
 
 .. tip::
-  Something like this might be helpful!
+  Something like this might be helpful! If not, check `Google <https://google.com/>`_
