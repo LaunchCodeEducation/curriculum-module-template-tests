@@ -9,9 +9,20 @@ Nulla scelerisque orci leo, semper tincidunt neque eleifend vel. Nullam accumsan
 
 Hyperlinks should appear `as so <https://google.com/>`_.
 
+Text Formatting
+===============
+- *italic* text
+- **bold** text
+- ``verbatim`` text
+- :code:`inline code` text
+
+Inline Code Styles
+==================
+When you don't want **all** your text to be in :code:`inline code style` you can use ``:code:`your code text here``` or ````your code text here````
+
 Code Block tests
 ================
-Code block with no syntax highlighting::
+Code block with no syntax via highlighting::
 
     string HelloWorld;
     int numberoftimes = 17;
