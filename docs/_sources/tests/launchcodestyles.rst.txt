@@ -41,7 +41,29 @@ Code block with syntax highlighting:
 Aside box
 =========
 
-Oftentimes, we will use aside boxes in our curriculum.
+Oftentimes, we will use aside boxes in our curriculum. Create them via ``.. note::``
 
-.. tip::
+.. note::
   Something like this might be helpful! If not, check `Google <https://google.com/>`_
+
+Lists
+=====
+
+- bullets only
+- more bullets
+
+- sub bullets
+
+  - these are the sub
+  - items, they are so sub
+
+1. numbered items
+2. numbered ites with sub items
+
+   1. make sure to line up the first subm with the first character of parent line
+   2. more sub
+
+3. non numbered sub items
+
+   - a thing
+   - another thing
