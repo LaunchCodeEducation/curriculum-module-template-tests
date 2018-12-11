@@ -1,5 +1,5 @@
-Tests
-=====
+Content Tests
+=============
 
 .. contents:: Page Contents
 
