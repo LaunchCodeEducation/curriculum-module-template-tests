@@ -1,7 +1,15 @@
 Content Tests
 =============
 
-.. contents:: Page Contents
+This set of tests is focused on a variety of content elements and directives that have special styling.
+
+Table of Contents
+-----------------
+
+.. contents:: On this page
+
+Text Block
+----------
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et bibendum nibh. Duis et semper ante. Mauris pretium rutrum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean maximus urna ut leo tempor, at faucibus felis fermentum. Proin quis nisl sit amet felis pretium posuere sit amet id justo. Nam condimentum auctor turpis, nec consequat lectus mattis et. Suspendisse ornare maximus lectus vitae molestie. Proin mauris est, imperdiet nec sagittis sed, tristique sed neque. Proin et mauris sollicitudin risus pulvinar rutrum ultricies et orci. In elementum dolor sed augue viverra facilisis.
 
@@ -15,18 +23,20 @@ Images and figures should be full-width unless the `:width:` or `:height:` are s
 .. image:: /_static/images/mentor-center.jpg
 
 .. figure:: /_static/images/peabody.jpg
-   
+
    The first meeting of the first ever LaunchCode course, at Peabody Opera House in St. Louis in 2015
+
+Bonus Mission
+-------------
+
+Headings with the text "Bonus Mission" should have a rocket icon inserted before the heading via CSS.
+
+Since this utilizes the heading's automatically-generated `id` attribute, it won't work if there are multiple such headings on the same page.
 
 Bonus Missions
 --------------
 
-Headings with the text "Bonus Mission" or "Bonus Missions" should have a rocket icon inserted before the heading via CSS.
-
-Bonus Mission
-^^^^^^^^^^^^^
-
-Since this utilizes the heading's automatically-generated `id` attribute, it won't work if there are multiple such headings on the same page.
+Pluralizing the heading should work the same way.
 
 Tables
 ------

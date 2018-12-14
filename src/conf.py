@@ -34,6 +34,8 @@ extensions = [
     'sphinx.ext.githubpages',
 ]
 
+number_figures = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
