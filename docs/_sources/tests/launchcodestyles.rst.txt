@@ -32,7 +32,8 @@ Code block with no syntax via highlighting::
 
 Code block with syntax highlighting:
 
-.. code-block:: python
+.. code-block:: javascript
+   :linenos:
 
    def sayHello():
     print("Hello World!")
