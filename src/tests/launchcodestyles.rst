@@ -40,6 +40,13 @@ Code block with syntax highlighting:
 
    sayHello()
 
+.. attention::
+   This is an admonition to test code blocks within admonitions.
+
+   .. sourcecode:: js
+
+      console.log("Hello World");
+
 Admonitions
 -----------
 
