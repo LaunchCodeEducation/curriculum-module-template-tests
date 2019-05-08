@@ -67,7 +67,7 @@ language = None
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'docs']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'fruity'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -174,7 +174,6 @@ todo_include_todos = False
 
 def setup(app):
     app.add_stylesheet('css/launchcode.css')
-    app.add_stylesheet('https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css')
     app.add_config_value('recommonmark_config', {
             'enable_eval_rst': True,
             }, True)
