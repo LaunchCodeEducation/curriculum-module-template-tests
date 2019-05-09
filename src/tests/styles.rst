@@ -117,7 +117,6 @@ Make sure double-digit line numbers render properly
    }
 
 
-   
 
 
 
@@ -126,6 +125,26 @@ Make sure double-digit line numbers render properly
       let reversed = str.split('').reverse().join('');
       return reversed === str;
    }
+
+
+.. sourcecode:: css
+   :linenos:
+
+   .highlighttable .linenos {
+      background-color: #eee;
+      border-radius: 4px 0 0 4px;
+      width: 42px;
+      text-align: right;
+   }
+
+
+.. sourcecode:: html
+   :linenos:
+
+   <div>
+      <p>Code block with JS highlighting:</p>
+   </div>
+
 
 .. admonition:: Example
 
