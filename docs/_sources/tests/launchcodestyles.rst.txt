@@ -42,34 +42,42 @@ Code block with syntax highlighting:
 Admonitions
 -----------
 
-Oftentimes, we will use admonitions (e.g. note, warning, tip) in our curriculum. Create them via `RST directives <http://www.sphinx-doc.org/en/stable/usage/restructuredtext/basics.html#directives>`_.
+Oftentimes, we will use admonitions (e.g. note, warning, tip) in our curriculum. Create them via `RST directives <http://www.sphinx-doc.org/en/stable/usage/restructuredtext/basics.html#directives>`_. For proper usage of admonitions, see the `curriculum docs <https://education.launchcode.org/curriculum-docs/guide/admonitions.html>`_.
 
-.. attention::
-   Now is not a time to `be distrated <https://giphy.com/gifs/afv-funny-fail-lol-3ornk9v2rS7mjf5qWA>`_!
 
-.. caution::
-   `Something bad <https://giphy.com/gifs/funny-crash-12MqSTw12YAnkI>`_ will happen if you ignore this!
+.. note:: 
 
-.. danger::
-   Be careful so you `don't get hurt <https://giphy.com/gifs/ice-everyone-dancer-9uyTvcNFUbpXa>`_!
+   The Note is probably the most widely used admonition. It should be used to call attention to a an important point. Often, Notes will also deviate from the main flow of discussion a bit. 
 
-.. error::
-   Opps! Something `broke <https://giphy.com/gifs/car-chris-farley-tommy-boy-feO9ESQit0QM0>`_.
+.. warning:: 
 
-.. hint::
-   If you want to know who ate the pizza, `this <https://giphy.com/gifs/hint-HvdQErvkFUsco>`_ might help.
+   Use a Warning to emphasize a subtle or surprising fact that could cause students trouble.
 
-.. important::
-   Some information is `more important <https://giphy.com/gifs/sherlock-bbc-one-l0MYAY18Pxyxwu2xa>`_ than others.
+.. tip:: 
 
-.. note::
-  Something like this might be helpful! If not, check `Google <https://google.com/>`_
+   Use a Tip to 
 
-.. tip::
-   Sometimes a little help can `make things click <https://giphy.com/gifs/topher-grace-eric-foreman-Mjq9vmDuJlBKw>`_.
+.. admonition:: Question
 
-.. warning::
-   Things could get bad if you don't `heed this <https://giphy.com/gifs/wes-anderson-moonrise-kingdom-warning-tyk39lYCnSMIo>`_!
+   Questions are most often used in "Check Your Understanding" sections, and block out a self-check question that the reader should consider.
+
+.. admonition:: Example
+
+   Examples provide concrete instances of the topic at hand.
+
+.. admonition:: Examples
+
+   Like an Example, but plural (duh).
+   
+.. admonition:: Try It!
+
+   Try It! admonitions call the reader to learn by doing. Use Try It! with a prompt or program that the reader should engage with to better understand a concept.
+
+   A common pattern is to follow a Try It! with a Question related to the prompt.
+
+.. admonition:: Fun Fact
+
+   An interesting, but supplemental, fact related to the current discussion. Fun Fact admonitions should communicate to the reader that the content is not part of the lesson's objectives, but is something that might be interesting or useful. 
 
 .. admonition:: Generic
 
