@@ -161,4 +161,4 @@ Make sure double-digit line numbers render properly
 Bold Text Within Headings: **console.log**
 ------------------------------------------
 
-"Within" in the heading above should be visibly distinct from the other words. 
+``console.log`` in the heading above should be visibly distinct from the other words. 
