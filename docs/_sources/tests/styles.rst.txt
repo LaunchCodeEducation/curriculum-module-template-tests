@@ -62,3 +62,62 @@ False  True   False
 True   True   True
 =====  =====  =======
 
+.. list-table:: List Table Title
+   :header-rows: 1
+
+   * - State
+     - Abbreviation
+     - Capital 
+   * - Missouri
+     - MO
+     - Jefferson City
+   * - Illinois
+     - IL
+     - Springfield
+   * - Florida
+     - FL
+     - Tallahassee 
+
+Code Blocks
+-----------
+
+Code block without higlighting, using ``::``:
+
+::
+
+   console.log("hello world");
+
+Code block with JS highlighting:
+
+.. sourcecode:: js
+
+   function isPalindrome(str) {
+      let reversed = str.split('').reverse().join('');
+      return reversed === str;
+   }
+
+Code block with JS highlighting, with line numbers:
+
+.. sourcecode:: js
+   :linenos:
+
+   function isPalindrome(str) {
+      let reversed = str.split('').reverse().join('');
+      return reversed === str;
+   }
+
+
+   // Make sure double-digit line numbers render properly
+
+
+
+
+   function isPalindrome(str) {
+      let reversed = str.split('').reverse().join('');
+      return reversed === str;
+   }
+
+Bold Text **Within** Headings
+-----------------------------
+
+"Within" in the heading above should be visibly distinct from the other words. 
