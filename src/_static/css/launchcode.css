@@ -15,6 +15,14 @@ h5 a {
     color: inherit;
 }
 
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong {
+    color: #716b7a;
+}
+
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -35,7 +43,7 @@ code {
 
 .navbar-brand img {
     margin-top: -10px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .searchLabel {
@@ -325,8 +333,13 @@ div.contents a:hover {
     margin: 2px 0;
 }
 
-.admonition .highlight {
-    padding-top: 10px;
+.admonition .highlight,
+.admonition .highlighttable {
+    margin: 10px 0;
+}
+
+.admonition .highlighttable .highlight {
+    margin: 0;
 }
 
 .highlight .c { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment */
