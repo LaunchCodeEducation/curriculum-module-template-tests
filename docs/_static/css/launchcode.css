@@ -230,7 +230,7 @@ pre {
 }
 
 .highlighttable .linenos pre {
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 0 0 2em;
 }
 
@@ -370,4 +370,15 @@ h2, h3, h4, h5, h6 {
 .footer p {
     margin: 0 0 10.5px;
 }
+
+/* Tables */
+
+table caption {
+    color: #716b7a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* END Tables */
+
 

@@ -221,6 +221,30 @@ pre {
     border: 1px solid #777;
     border-radius: 4px;
     background-color: #354a5f;
+    margin: 0;
+}
+
+.highlighttable .linenos {
+    background-color: #eee;
+    border-radius: 4px 0 0 4px;
+}
+
+.highlighttable .linenos pre {
+    font-size: 14px;
+    padding: 0 0 0 2em;
+}
+
+table.highlighttable {
+    width: 100%;
+    margin: 0;
+}
+
+table.highlighttable td {
+	padding: 0;
+}
+
+.highlighttable .code pre {
+    border-radius: 0 4px 4px 0;
 }
 
 blockquote {
@@ -346,4 +370,15 @@ h2, h3, h4, h5, h6 {
 .footer p {
     margin: 0 0 10.5px;
 }
+
+/* Tables */
+
+table caption {
+    color: #716b7a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* END Tables */
+
 
