@@ -117,7 +117,7 @@ Code block with JS highlighting, with line numbers:
       return reversed === str;
    }
 
-Bold Text **Within** Headings
------------------------------
+Bold Text Within Headings: **console.log**
+------------------------------------------
 
 "Within" in the heading above should be visibly distinct from the other words. 
