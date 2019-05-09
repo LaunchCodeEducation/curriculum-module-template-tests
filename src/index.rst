@@ -8,6 +8,7 @@ Style and accessibility tests for LaunchCode's `Sphinx template`_.
 
    tests/styles
    tests/launchcodestyles
+   tests/sidebarstyles
 
 To view template and styles tests for the CoderGirl theme, you can check out the `CoderGirl test site <https://education.launchcode.org/cg-curriculum-module-template-tests/>`_.
 

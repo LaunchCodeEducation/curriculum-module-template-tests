@@ -32,12 +32,20 @@ Code block with no syntax via highlighting::
 
 Code block with syntax highlighting:
 
-.. code-block:: python
+.. code-block:: javascript
+   :linenos:
 
    def sayHello():
     print("Hello World!")
 
    sayHello()
+
+.. attention::
+   This is an admonition to test code blocks within admonitions.
+
+   .. sourcecode:: js
+
+      console.log("Hello World");
 
 Admonitions
 -----------
