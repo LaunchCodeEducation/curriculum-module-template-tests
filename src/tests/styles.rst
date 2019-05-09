@@ -106,8 +106,18 @@ Code block with JS highlighting, with line numbers:
       return reversed === str;
    }
 
+Make sure double-digit line numbers render properly
 
-   // Make sure double-digit line numbers render properly
+.. sourcecode:: js
+   :linenos:
+
+   function isPalindrome(str) {
+      let reversed = str.split('').reverse().join('');
+      return reversed === str;
+   }
+
+
+   
 
 
 
@@ -116,6 +126,18 @@ Code block with JS highlighting, with line numbers:
       let reversed = str.split('').reverse().join('');
       return reversed === str;
    }
+
+.. admonition:: Example
+
+   A code block within an admonition.
+
+   .. sourcecode:: js
+      :linenos:
+
+      function isPalindrome(str) {
+         let reversed = str.split('').reverse().join('');
+         return reversed === str;
+      }
 
 Bold Text Within Headings: **console.log**
 ------------------------------------------
