@@ -36,6 +36,11 @@ code {
     background-color: #f9f1ef;
 }
 
+.pager code {
+	color: #fff;
+	font-weight: bold;
+}
+
 .navbar-brand {
     padding: 15px 15px;
     line-height: 30px;
@@ -43,7 +48,7 @@ code {
 
 .navbar-brand img {
     margin-top: -10px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .searchLabel {
@@ -188,14 +193,28 @@ pre {
     margin: 0;
 }
 
+div.highlight-js,
+div.highlight-none,
+div.highlight-css,
+div.highlight-html {
+    margin: 1em 0;
+}
+
 .highlighttable .linenos {
-    background-color: #eee;
+    background-color: #354a5f;
     border-radius: 4px 0 0 4px;
+    width: 42px;
+    text-align: right;
 }
 
 .highlighttable .linenos pre {
     font-size: 14px;
-    padding: 0 0 0 2em;
+    padding: 0;
+    padding-right: 10px;
+    color: #354a5f;
+    color: #fff;
+    border-right: 1px solid #fff;
+    border-radius: 0;
 }
 
 table.highlighttable {
@@ -209,6 +228,7 @@ table.highlighttable td {
 
 .highlighttable .code pre {
     border-radius: 0 4px 4px 0;
+    border-left: none;
 }
 
 blockquote {
@@ -289,8 +309,13 @@ div.contents a:hover {
     margin: 2px 0;
 }
 
-.admonition .highlight {
-    padding-top: 10px;
+.admonition .highlight,
+.admonition .highlighttable {
+    margin: 10px 0;
+}
+
+.admonition .highlighttable .highlight {
+    margin: 0;
 }
 
 .highlight .c { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment */
