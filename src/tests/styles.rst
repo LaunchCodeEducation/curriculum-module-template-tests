@@ -157,8 +157,3 @@ Make sure double-digit line numbers render properly
          let reversed = str.split('').reverse().join('');
          return reversed === str;
       }
-
-Bold Text Within Headings: **console.log**
-------------------------------------------
-
-``console.log`` in the heading above should be visibly distinct from the other words. 

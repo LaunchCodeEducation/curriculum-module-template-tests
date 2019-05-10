@@ -113,3 +113,28 @@ Lists
 
    - a thing
    - another thing
+
+Inline Code
+-----------
+
+With Pager Buttons
+^^^^^^^^^^^^^^^^^^
+
+Inline code formatting on pager buttons should display with appropriate contrast.
+
+.. raw:: html
+
+   
+   <ul class="pager">
+      
+      <li class="previous"><a href="output.html"><span aria-hidden="true">←</span> 3.2. Output With <code class="docutils literal notranslate"><span class="pre">console.log</span></code></a></li>
+      
+      
+      <li class="next"><a href="../data-and-variables/index.html">4. Data and Variables <span aria-hidden="true">→</span></a></li>
+      
+   </ul>
+    
+In Headings: ``console.log``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The heading above should look okay.
