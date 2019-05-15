@@ -157,3 +157,34 @@ Make sure double-digit line numbers render properly
          let reversed = str.split('').reverse().join('');
          return reversed === str;
       }
+
+.. admonition:: Example
+
+   A code block with long lines should overflow properly.
+
+   .. sourcecode:: html
+
+      <!doctype html>
+      <head>
+      </head>
+      <body>
+
+         <form id="searchForm">
+            <input type="text" name="q" />
+            <label><input type="radio" name="engine" value="google" />Google Google Google Google Google Google Google Google</label>
+            <label>
+                  <input type="radio" name="engine" value="duckduckgo" />
+                  DuckDuckGo 
+            </label>
+            <label>
+                  <input type="radio" name="engine" value="bing" />
+                  Bing 
+            </label>
+            <label>
+                  <input type="radio" name="engine" value="ask" />
+                  Ask 
+            </label>
+            <input type="submit" value="Go!" />
+         </form>
+
+      </body>
