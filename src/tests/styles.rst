@@ -163,7 +163,8 @@ Make sure double-digit line numbers render properly
    A code block with long lines should overflow properly.
 
    .. sourcecode:: html
-
+      :linenos:
+      
       <!doctype html>
       <head>
       </head>
