@@ -7,6 +7,11 @@ h1 {
     color: #3c79b8;
 }
 
+
+h1, h2, h3, h4, h5 {
+    margin: 1em 0 .5em;
+}
+
 h1 a,
 h2 a,
 h3 a,
@@ -29,6 +34,17 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover {
     text-decoration: none;
+}
+
+.toctree-wrapper ul,
+.toctree-wrapper ol  {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.toctree-wrapper > ul > li > a,
+.toctree-wrapper > ol > li > a {
+	font-size: 20px;
 }
 
 code {
@@ -172,21 +188,6 @@ div.admonition {
     margin-top: 2em;
 }
 
-/* Bonus Missions */
-
-#bonus-missions > h1 a:first-child::before,
-#bonus-mission > h1 a:first-child::before,
-#bonus-missions > h2 a:first-child::before,
-#bonus-mission > h2 a:first-child::before,
-#bonus-missions > h3 a:first-child::before,
-#bonus-mission > h3 a:first-child::before,
-#bonus-missions > h4 a:first-child::before,
-#bonus-mission > h4 a:first-child::before,
-#bonus-missions > h5 a:first-child::before,
-#bonus-mission > h5 a:first-child::before {
-    content: '🚀 ';
-}
-
 pre {
     display: block;
     overflow-x: auto;
@@ -278,12 +279,6 @@ div.topic {
 div.contents {
     background-color: #fff;
     font-family: "Nexa",sans-serif;
-    /*
-    border: 1px solid #cacacb;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-radius: 0;
-    */
 }
 
 div.contents ul  {
@@ -326,7 +321,14 @@ div.contents a:hover {
 }
 
 .highlight .c { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment */
+.highlight .ch { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment.Hashbang */
+.highlight .cm { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment.Multiline */
+.highlight .cp { color: #E67F74; font-weight: bold; font-style: italic; background-color: #354a5f } /* Comment.Preproc */
+.highlight .cpf { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment.PreprocFile */
+.highlight .c1 { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment.Single */
+.highlight .cs { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment.Special */
 
+.highlight .s { color: #61C08D } /* Literal.String */
 .highlight .sa { color: #61C08D } /* Literal.String.Affix */
 .highlight .sb { color: #61C08D } /* Literal.String.Backtick */
 .highlight .sc { color: #61C08D } /* Literal.String.Char */
@@ -346,14 +348,32 @@ div.contents a:hover {
 .highlight .mh { color: #DF552D; font-weight: bold } /* Literal.Number.Hex */
 .highlight .mi { color: #DF552D; font-weight: bold } /* Literal.Number.Integer */
 .highlight .mo { color: #DF552D; font-weight: bold } /* Literal.Number.Oct */
+.highlight .m { color: #DF552D; font-weight: bold } /* Literal.Number */
+.highlight .il { color: #DF552D; font-weight: bold } /* Literal.Number.Integer.Long */
 
 .highlight .s { color: #61C08D } /* Literal.String */
 
+.highlight .no { color: #FF98CE } /* Name.Constant */
 .highlight .na { color: #FF98CE; font-weight: bold } /* Name.Attribute */
 .highlight .nf { color: #FF98CE; font-weight: bold } /* Name.Function */
 .highlight .fm { color: #FF98CE; font-weight: bold } /* Name.Function.Magic */
+.highlight .nt { color: #FF98CE; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #FF98CE } /* Name.Variable */
+.highlight .vc { color: #FF98CE } /* Name.Variable.Class */
+.highlight .vg { color: #FF98CE } /* Name.Variable.Global */
+.highlight .vi { color: #FF98CE } /* Name.Variable.Instance */
+.highlight .vm { color: #FF98CE } /* Name.Variable.Magic */
 
+.highlight .k { color: #f1A640; font-weight: bold } /* Keyword */
 .highlight .kt { color: #f1A640; font-weight: bold } /* Keyword.Type */
+.highlight .kc { color: #f1A640; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #f1A640; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #f1A640; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #f1A640 } /* Keyword.Pseudo */
+.highlight .kr { color: #f1A640; font-weight: bold } /* Keyword.Reserved */
+
+.highlight .go { color: #ffffff; background-color: #354a5f } /* Generic.Output */
+
 
 /* TODO - Remove these after updating shared ed styles(custom.css?) */
 
