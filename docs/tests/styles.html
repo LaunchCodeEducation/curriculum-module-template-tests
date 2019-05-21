@@ -7,12 +7,13 @@
     <title>Content Tests &#8212; LaunchCode Sphinx Template Tests  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/fa/css/all.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/launchcode.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
@@ -273,10 +274,32 @@
 </pre></div>
 </div>
 <p>Code block with JS highlighting, with line numbers:</p>
-<div class="highlight-js notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">isPalindrome</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-js notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">class</span> <span class="nx">MyClass</span> <span class="p">{</span>
+
+   <span class="nx">constructor</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">prop</span> <span class="o">=</span> <span class="nx">arg</span><span class="p">;</span>
+   <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">myVar</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+
+<span class="c1">// This is a comment</span>
+<span class="kd">function</span> <span class="nx">isPalindrome</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
    <span class="kd">let</span> <span class="nx">reversed</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">reverse</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
    <span class="k">return</span> <span class="nx">reversed</span> <span class="o">===</span> <span class="nx">str</span><span class="p">;</span>
 <span class="p">}</span>

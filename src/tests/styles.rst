@@ -101,6 +101,17 @@ Code block with JS highlighting, with line numbers:
 .. sourcecode:: js
    :linenos:
 
+   class MyClass {
+
+      constructor(arg) {
+         this.prop = arg;
+      }
+
+   }
+
+   let myVar = 42;
+   
+   // This is a comment
    function isPalindrome(str) {
       let reversed = str.split('').reverse().join('');
       return reversed === str;
