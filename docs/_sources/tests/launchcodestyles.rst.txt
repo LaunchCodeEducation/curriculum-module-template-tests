@@ -47,6 +47,8 @@ Code block with syntax highlighting:
 
       console.log("Hello World");
 
+.. _admonition-styles:
+
 Admonitions
 -----------
 

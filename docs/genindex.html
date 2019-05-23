@@ -15,7 +15,6 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/js/launchcode.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -79,6 +78,13 @@
 <li class="toctree-l2"><a class="reference internal" href="tests/sidebarstyles.html#heading-2">Heading 2</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="tests/custom-sphinx-extensions.html">Custom Sphinx Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tests/custom-sphinx-extensions.html#replit-code-blocks">ReplIt Code Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests/custom-sphinx-extensions.html#external-links">External Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests/custom-sphinx-extensions.html#ordered-toctree-lists">Ordered toctree Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests/custom-sphinx-extensions.html#admonition-icons">Admonition Icons</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -94,7 +100,8 @@
             
 <form class="navbar-form navbar-right" action="search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />

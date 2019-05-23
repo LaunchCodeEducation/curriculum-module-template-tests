@@ -46,7 +46,6 @@ h5 a:hover {
 .toctree-wrapper > ol > li > a {
 	font-size: 20px;
 }
-
 code {
     background: none;
     color: #419f6a;
@@ -72,7 +71,9 @@ code {
 .searchLabel {
     color:white;
     font-size: 1.4vw;
-    font-family: "Nexa Black";
+    font-family: "Nexa";
+    font-weight: bold;
+    margin-right: 0.5em;
 }
 
 /* Trick to prevent section headings from hiding behind the navbar */
@@ -90,6 +91,12 @@ code {
 /* Aside Boxes and Admonitions  */
 .fas {
 	color: #FF4F33;
+}
+
+.fas.fa-external-link-alt {
+	color: inherit;
+	font-size: 10px;
+    padding-left: 4px;
 }
 
 aside {

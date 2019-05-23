@@ -14,7 +14,6 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/js/launchcode.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -80,6 +79,13 @@
 <li class="toctree-l2"><a class="reference internal" href="sidebarstyles.html#heading-2">Heading 2</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="custom-sphinx-extensions.html">Custom Sphinx Extensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="custom-sphinx-extensions.html#replit-code-blocks">ReplIt Code Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-sphinx-extensions.html#external-links">External Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-sphinx-extensions.html#ordered-toctree-lists">Ordered toctree Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-sphinx-extensions.html#admonition-icons">Admonition Icons</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -95,7 +101,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -133,14 +140,14 @@
 <div class="contents topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
-<li><a class="reference internal" href="#content-tests" id="id3">Content Tests</a><ul>
-<li><a class="reference internal" href="#table-of-contents" id="id4">Table of Contents</a></li>
-<li><a class="reference internal" href="#text-block" id="id5">Text Block</a></li>
-<li><a class="reference internal" href="#images-and-figures" id="id6">Images and Figures</a></li>
-<li><a class="reference internal" href="#bonus-mission" id="id7">Bonus Mission</a></li>
-<li><a class="reference internal" href="#bonus-missions" id="id8">Bonus Missions</a></li>
-<li><a class="reference internal" href="#tables" id="id9">Tables</a></li>
-<li><a class="reference internal" href="#code-blocks" id="id10">Code Blocks</a></li>
+<li><a class="reference internal" href="#content-tests" id="id3" target="_blank">Content Tests<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#table-of-contents" id="id4" target="_blank">Table of Contents<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#text-block" id="id5" target="_blank">Text Block<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#images-and-figures" id="id6" target="_blank">Images and Figures<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#bonus-mission" id="id7" target="_blank">Bonus Mission<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#bonus-missions" id="id8" target="_blank">Bonus Missions<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#tables" id="id9" target="_blank">Tables<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#code-blocks" id="id10" target="_blank">Code Blocks<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </li>
 </ul>
@@ -356,7 +363,7 @@
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-example admonition">
-<p class="first admonition-title">Example</p>
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>A code block within an admonition.</p>
 <div class="last highlight-js notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -369,7 +376,7 @@
 </td></tr></table></div>
 </div>
 <div class="admonition-example admonition">
-<p class="first admonition-title">Example</p>
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>A code block with long lines should overflow properly.</p>
 <div class="last highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
