@@ -7,6 +7,7 @@ Style and accessibility tests for LaunchCode's `Sphinx template`_.
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    tests/styles
    tests/launchcodestyles
