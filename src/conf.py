@@ -32,6 +32,10 @@ release = ''
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
+    'external_links',
+    'admonition_icons',
+    'replit',
+    'ordered_toctree',
 ]
 
 number_figures = True
