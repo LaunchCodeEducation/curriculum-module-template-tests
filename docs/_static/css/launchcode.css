@@ -150,6 +150,12 @@ code {
 .dropdown-menu.globaltoc {
   max-height: calc(100vh - 60px);
   overflow: scroll;
+  min-width: 400px;
+}
+
+.nav .dropdown-menu ol {
+    list-style: none;
+    padding: 1em;
 }
 
 /* Aside Boxes and Admonitions  */
@@ -493,4 +499,8 @@ p[id]:before {
     margin-top: -60px;
     height: 60px;
     visibility: hidden; 
+}
+
+.navbar-nav .open .dropdown-menu {
+    background-color: white;
 }
