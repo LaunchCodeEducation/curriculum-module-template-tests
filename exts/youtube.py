@@ -10,6 +10,11 @@ def setup(app):
 
 class YouTube(Directive):
 
+    GITHUB_URL_TEMPLATE = "https://github.com/{github_user}/{repo}/tree/{branch}"
+    YOUTUBE_EMBED_TEMPLATE = """
+<div style="text-align:center;"><iframe width="800" height="450" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+"""
+
     required_arguments = 0
     final_argument_whitespace = True
     has_content = False
@@ -22,8 +27,6 @@ class YouTube(Directive):
     url_template = "https://repl.it/@%s/%s"
 
     def run(self):
-
-        GITHUB_URL_TEMPLATE = "https://github.com/{github_user}/{repo}/tree/{branch}"
 
         vid_params = {
             'video_id': self.options['video_id'],
@@ -41,17 +44,13 @@ class YouTube(Directive):
 
         params = {**vid_params, **gh_params}
 
-        print(params)
-
-        text = """
-        <div style="text-align:center;"><iframe width="800" height="450" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        """.format(**params)
+        text = self.YOUTUBE_EMBED_TEMPLATE.format(**params)
 
         para_nodes = nodes.paragraph()
 
         if 'github_user' in params:
             ref_node = nodes.reference('', '')
-            ref_node['refuri'] = GITHUB_URL_TEMPLATE.format(**params)
+            ref_node['refuri'] = self.GITHUB_URL_TEMPLATE.format(**params)
             ref_node_text = "{branch} branch".format(**params)
             ref_node += nodes.Text(ref_node_text, ref_node_text)
             para_nodes += nodes.Text("The final code from this video is in the ", "The final code from this video is in the ")
