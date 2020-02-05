@@ -58,3 +58,30 @@ Admonition Icons
 ----------------
 
 Styles for :ref:`admonition-styles` should include indicator icons to the left of the title.
+
+YouTube Embeds
+--------------
+
+You should be able to embed a YouTube video with the following custom directive:
+
+:: 
+
+   .. youtube::
+      :video_id: FOvBYJxGPTQ
+
+.. youtube::
+   :video_id: FOvBYJxGPTQ
+
+Optionally, if you provide a user/repo/branch triplet, a message linking to the GitHub branch should be displayed below:
+
+::
+
+   .. youtube::
+      :video_id: FOvBYJxGPTQ
+      :gh_path: LaunchCodeEducation/coding-events/enums
+
+
+.. youtube::
+   :video_id: FOvBYJxGPTQ
+   :gh_path: LaunchCodeEducation/coding-events/enums
+

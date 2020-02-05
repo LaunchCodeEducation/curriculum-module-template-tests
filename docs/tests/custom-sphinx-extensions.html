@@ -83,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#external-links">External Links</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ordered-toctree-lists">Ordered toctree Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#admonition-icons">Admonition Icons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#youtube-embeds">YouTube Embeds</a></li>
 </ol>
 </li>
 </ol>
@@ -120,6 +121,7 @@
 <li><a class="reference internal" href="#external-links">External Links</a></li>
 <li><a class="reference internal" href="#ordered-toctree-lists">Ordered toctree Lists</a></li>
 <li><a class="reference internal" href="#admonition-icons">Admonition Icons</a></li>
+<li><a class="reference internal" href="#youtube-embeds">YouTube Embeds</a></li>
 </ul>
 </li>
 </ul>
@@ -177,6 +179,26 @@
 <div class="section" id="admonition-icons">
 <h2>Admonition Icons<a class="headerlink" href="#admonition-icons" title="Permalink to this headline">¶</a></h2>
 <p>Styles for <a class="reference internal" href="launchcodestyles.html#admonition-styles"><span class="std std-ref">Admonitions</span></a> should include indicator icons to the left of the title.</p>
+</div>
+<div class="section" id="youtube-embeds">
+<h2>YouTube Embeds<a class="headerlink" href="#youtube-embeds" title="Permalink to this headline">¶</a></h2>
+<p>You should be able to embed a YouTube video with the following custom directive:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.. youtube::
+   :video_id: FOvBYJxGPTQ
+</pre></div>
+</div>
+
+        <div style="text-align:center;"><iframe width="800" height="450" src="https://www.youtube.com/embed/FOvBYJxGPTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <p></p>
+<p>Optionally, if you provide a user/repo/branch triplet, a message linking to the GitHub branch should be displayed below:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.. youtube::
+   :video_id: FOvBYJxGPTQ
+   :gh_path: LaunchCodeEducation/coding-events/enums
+</pre></div>
+</div>
+
+        <div style="text-align:center;"><iframe width="800" height="450" src="https://www.youtube.com/embed/FOvBYJxGPTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <p>The final code from this video is in the <a class="reference external" href="https://github.com/LaunchCodeEducation/coding-events/tree/enums" target="_blank">enums branch<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>coding-events</p>
 </div>
 </div>
 
