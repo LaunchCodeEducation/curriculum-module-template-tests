@@ -48,6 +48,18 @@ Code block with syntax highlighting:
       console.log("Hello World");
       // This statements prints fun words to the screen!
 
+
+.. list-table::
+   :widths: 60 40
+
+   * - .. sourcecode:: js
+
+          console.log("Hello World");
+          // This statements prints fun words to the screen!
+
+     - This is the accompanying explanation
+
+
 .. _admonition-styles:
 
 Admonitions
