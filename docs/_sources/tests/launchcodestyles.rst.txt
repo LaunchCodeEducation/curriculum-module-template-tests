@@ -56,7 +56,7 @@ Code block with syntax highlighting:
 
           console.log("Hello World!");
           // This statements prints fun words to the screen!
-     - This is the accompanying explanation
+     - This is the accompanying explanation!
 
 
 .. _admonition-styles:
