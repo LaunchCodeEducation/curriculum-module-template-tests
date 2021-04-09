@@ -45,7 +45,7 @@ Code block with syntax highlighting:
 
    .. sourcecode:: js
 
-      console.log("Hello World!");
+      console.log("Hello World!!");
       // This statements prints fun words to the screen!
 
 
