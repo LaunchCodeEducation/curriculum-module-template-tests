@@ -20,7 +20,7 @@ project = 'LaunchCode Sphinx Template Tests'
 # -- Project information -----------------------------------------------------
 
 
-copyright = '2018, LaunchCode'
+copyright = '2020, LaunchCode'
 author = 'LaunchCode'
 
 # The short X.Y version
@@ -36,6 +36,7 @@ release = ''
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
+    'youtube',
     'external_links',
     'admonition_icons',
     'replit',
@@ -162,10 +163,8 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 html_sidebars = {
-    '**': ['localtoc.html'],
-    'index': [],
-    'search': [],
-    'about': []
+    '**': [],
+
 }
 
 
@@ -181,9 +180,6 @@ todo_include_todos = False
 
 
 def setup(app):
-    app.add_stylesheet('fa/css/all.css')
-    app.add_stylesheet('css/launchcode.css')
-    app.add_config_value('recommonmark_config', {
-            'enable_eval_rst': True,
-            }, True)
-    app.add_transform(AutoStructify)
+   app.add_css_file('fa/css/all.css')
+   app.add_css_file('css/launchcode.css')
+   app.add_css_file('css/site.css')
