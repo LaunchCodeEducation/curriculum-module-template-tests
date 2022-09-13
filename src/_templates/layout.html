@@ -72,7 +72,7 @@
 {% block relbar2 %}{% endblock %}
 {% block sidebarsourcelink %}{% endblock %}
 
-{%- block body_tag %}<body class="{{ body_class }}" role="main">{% endblock %}
+{%- block body_tag %}<body class="{{ body_class }}">{% endblock %}
 
 {%- block content %}
 {{ navBar() }}
@@ -103,7 +103,7 @@
     </div>
 </div>
 {% endif %}
-<div class="container">
+<div class="container" role="main">
   <div class="row">
     {%- block sidebar1 %}{{ bsidebar() }}{% endblock %}
     <div class="{{ bs_span_prefix }}{{ bs_content_width }} col-md-offset-1 content ">
