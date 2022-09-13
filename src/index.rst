@@ -15,4 +15,9 @@ Style and accessibility tests for LaunchCode's `Sphinx template`_.
 
 To view template and styles tests for the CoderGirl theme, you can check out the `CoderGirl test site <https://education.launchcode.org/cg-curriculum-module-template-tests/>`_.
 
-.. _Sphinx template: https://github.com/LaunchCodeEducation/curriculum-module-template
+.. _Sphinx template: https://github.com/LaunchCodeEducation/curriculum-book-template
+
+.. toctree::
+   :hidden:
+
+   index-full
