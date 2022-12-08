@@ -16,11 +16,6 @@ jobs:
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-    # Example of using a custom build-command.
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        build-command: "sphinx-build src docs/"
-        docs-folder: "docs/"
     # Publish built docs to gh-pages branch.
     # ===============================
     - name: Commit documentation changes
