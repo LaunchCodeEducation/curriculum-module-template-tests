@@ -1,0 +1,20 @@
+name: "Deploy Master on Merge"
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: gh-pages
+        directory: gh-pages
+        github_token: ${{ secrets.TOKEN }}
