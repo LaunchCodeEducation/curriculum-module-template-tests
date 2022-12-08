@@ -1,4 +1,4 @@
-name: CI
+name: Deploy Master on Merge
 
 on:
   push:
@@ -7,29 +7,18 @@ on:
 
 jobs:
   build:
-
+    name: Install, Build, Deliver
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    # Standard drop-in approach that should work for most people.
+    - name: Check out Repository Code
+    - uses: actions/checkout@master
+
+    - name: Build Sphinx
     - uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "docs/"
-    # Publish built docs to gh-pages branch.
-    # ===============================
-    - name: Commit documentation changes
-      run: |
-        git clone https://github.com/launchcodeeducation/curriculum-module-templte-tests.git --branch gh-pages --single-branch gh-pages
-        cp -r docs/_build/html/* gh-pages/
-        cd gh-pages
-        touch .nojekyll
-        git config --local user.email "jwoolbright23@gmail.com"
-        git config --local user.name "jwoolbright23"
-        git add .
-        git commit -m "Update documentation" -a || true
-        # The above command will fail if no changes were present, so we ignore
-        # that.
+        docs-folder: "docs"
+        build-command: "sphinx-build src docs"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
