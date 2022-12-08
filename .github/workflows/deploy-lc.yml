@@ -34,10 +34,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - name: pip install requirements.txt
-        run: python3 -m pip install -r ./requirements.txt
-  
       - name: Build Project Artifacts
+        run: python3 -m pip install -r ./requirements.txt
       - run: sphinx-build src docs
 
       - name: Deploy to GitHub Pages
