@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:    
-      - master
+      - main
 
 jobs:
   build:
@@ -57,4 +57,4 @@ jobs:
       with:
         branch: gh-pages
         directory: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN }}
