@@ -23,12 +23,13 @@ jobs:
 
       - name: Get pip cache dir
         id: pip-cache
-        run: echo "::set-output name=dir::$(pip cache dir)"
+        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+#        run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache dependencies
         uses: actions/cache@master
         with:
-          path: ${{ steps.pip-cache.outputs.dir }}
+          path: ${{ env.dir }}
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
