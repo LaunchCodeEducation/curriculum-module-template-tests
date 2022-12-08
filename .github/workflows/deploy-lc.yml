@@ -25,7 +25,6 @@ jobs:
         id: pip-cache
         run: |
           echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
-#        run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache dependencies
         uses: actions/cache@master
@@ -34,12 +33,12 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-      - name: Install dependencies
-        run: python3 -m pip install -r ./requirements.txt
 
+      - name: Build Project Artifacts
+        run: python3 -m pip install -r ./requirements.txt
       - run: sphinx-build src docs
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
