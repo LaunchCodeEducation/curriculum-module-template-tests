@@ -29,7 +29,7 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@master
         with:
-          path: ${{ env.dir }}
+          path: ${{ $GITHUB_OUTPUT }}
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
