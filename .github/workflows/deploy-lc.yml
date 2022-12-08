@@ -1,0 +1,55 @@
+sudo: true
+cache: pip
+python: "3.9"
+language: python
+
+if: type = push AND branch = master
+
+install: # install dependencies (cached)
+  - pip install -r requirements.txt
+
+script:
+  - ./build -c # run clean build
+  - mv docs/ gh-pages/
+
+deploy:
+  provider: pages # github pages provider
+  skip_cleanup: true # save the build output (artifact)
+  local_dir: gh-pages # the directory to deploy to GH pages
+  target_branch: gh-pages # branch to push to
+  github_token: $TOKEN # access token with repo:public scope
+  
+ Build Config
+{
+  "language": "python",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "sudo": true,
+  "cache": {
+    "pip": true
+  },
+  "python": [
+    "3.9"
+  ],
+  "if": "type = push AND branch = master",
+  "install": [
+    "pip install -r requirements.txt"
+  ],
+  "script": [
+    "./build -c",
+    "mv docs/ gh-pages/"
+  ],
+  "deploy": [
+    {
+      "provider": "pages",
+      "strategy": "git",
+      "skip_cleanup": true,
+      "local_dir": "gh-pages",
+      "target_branch": "gh-pages",
+      "token": "$TOKEN"
+    }
+  ]
+}
+
