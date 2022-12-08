@@ -94,10 +94,10 @@
 <div class="section" id="inline-text">
 <h2>Inline Text<a class="headerlink" href="#inline-text" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><em>italic</em> text</li>
-<li><strong>bold</strong> text</li>
-<li><code class="docutils literal notranslate"><span class="pre">verbatim</span></code> text</li>
-<li><code class="code docutils literal notranslate"><span class="pre">inline</span> <span class="pre">code</span></code> text</li>
+<li><p><em>italic</em> text</p></li>
+<li><p><strong>bold</strong> text</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">verbatim</span></code> text</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">inline</span> <span class="pre">code</span></code> text</p></li>
 </ul>
 <p>When you don’t want <strong>all</strong> your text to be in <code class="code docutils literal notranslate"><span class="pre">inline</span> <span class="pre">code</span> <span class="pre">style</span></code> you can use <code class="docutils literal notranslate"><span class="pre">:code:`your</span> <span class="pre">code</span> <span class="pre">text</span> <span class="pre">here`</span></code> or <code class="docutils literal notranslate"><span class="pre">``your</span> <span class="pre">code</span> <span class="pre">text</span> <span class="pre">here``</span></code></p>
 </div>
@@ -121,25 +121,25 @@ console.log(numberoftimes * HelloWorld);
 </pre></div>
 </td></tr></table></div>
 <div class="admonition attention">
-<p class="first admonition-title">Attention</p>
+<p class="admonition-title">Attention</p>
 <p>This is an admonition to test code blocks within admonitions.</p>
-<div class="last highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
 <span class="c1">// This statements prints fun words to the screen!</span>
 </pre></div>
 </div>
 </div>
-<table border="1" class="colwidths-given docutils align-default">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="60%" />
-<col width="40%" />
+<col style="width: 60%" />
+<col style="width: 40%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><div class="first last highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
+<tbody>
+<tr class="row-odd"><td><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
 <span class="c1">// This statements prints fun words to the screen!</span>
 </pre></div>
 </div>
 </td>
-<td>This is the accompanying explanation!</td>
+<td><p>This is the accompanying explanation!</p></td>
 </tr>
 </tbody>
 </table>
@@ -148,64 +148,67 @@ console.log(numberoftimes * HelloWorld);
 <span id="admonition-styles"></span><h2>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h2>
 <p>Oftentimes, we will use admonitions (e.g. note, warning, tip) in our curriculum. Create them via <a class="reference external" href="http://www.sphinx-doc.org/en/stable/usage/restructuredtext/basics.html#directives" target="_blank">RST directives<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. For proper usage of admonitions, see the <a class="reference external" href="https://education.launchcode.org/curriculum-docs/guide/admonitions.html" target="_blank">curriculum docs<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <div class="admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">The Note is probably the most widely used admonition. It should be used to call attention to a an important point. Often, Notes will also deviate from the main flow of discussion a bit.</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>The Note is probably the most widely used admonition. It should be used to call attention to a an important point. Often, Notes will also deviate from the main flow of discussion a bit.</p>
 </div>
 <div class="admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">Use a Warning to emphasize a subtle or surprising fact that could cause students trouble.</p>
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>Use a Warning to emphasize a subtle or surprising fact that could cause students trouble.</p>
 </div>
 <div class="admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Use a Tip to</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Use a Tip to</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Questions are most often used in “Check Your Understanding” sections, and block out a self-check question that the reader should consider.</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Questions are most often used in “Check Your Understanding” sections, and block out a self-check question that the reader should consider.</p>
 </div>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
-<p class="last">Examples provide concrete instances of the topic at hand.</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Examples provide concrete instances of the topic at hand.</p>
 </div>
 <div class="admonition-examples admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
-<p class="last">Like an Example, but plural (duh).</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p>Like an Example, but plural (duh).</p>
 </div>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Try It! admonitions call the reader to learn by doing. Use Try It! with a prompt or program that the reader should engage with to better understand a concept.</p>
-<p class="last">A common pattern is to follow a Try It! with a Question related to the prompt.</p>
+<p>A common pattern is to follow a Try It! with a Question related to the prompt.</p>
 </div>
 <div class="admonition-fun-fact admonition">
-<p class="first admonition-title"><i class="fas fa-rocket" aria-hidden="true"></i>Fun Fact</p>
-<p class="last">An interesting, but supplemental, fact related to the current discussion. Fun Fact admonitions should communicate to the reader that the content is not part of the lesson’s objectives, but is something that might be interesting or useful.</p>
+<p class="admonition-title"><i class="fas fa-rocket" aria-hidden="true"></i>Fun Fact</p>
+<p>An interesting, but supplemental, fact related to the current discussion. Fun Fact admonitions should communicate to the reader that the content is not part of the lesson’s objectives, but is something that might be interesting or useful.</p>
 </div>
 <div class="admonition-generic admonition">
-<p class="first admonition-title">Generic</p>
-<p class="last">Sometimes, you just need to <a class="reference external" href="https://giphy.com/gifs/nhl-hockey-ice-xUPGcJU55vuGH8Hfeo" target="_blank">stand out<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p class="admonition-title">Generic</p>
+<p>Sometimes, you just need to <a class="reference external" href="https://giphy.com/gifs/nhl-hockey-ice-xUPGcJU55vuGH8Hfeo" target="_blank">stand out<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
 </div>
 <div class="section" id="lists">
 <h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>bullets only</li>
-<li>more bullets</li>
-<li>sub bullets<ul>
-<li>these are the sub</li>
-<li>items, they are so sub</li>
+<li><p>bullets only</p></li>
+<li><p>more bullets</p></li>
+<li><p>sub bullets</p>
+<ul>
+<li><p>these are the sub</p></li>
+<li><p>items, they are so sub</p></li>
 </ul>
 </li>
 </ul>
 <ol class="arabic simple">
-<li>numbered items</li>
-<li>numbered items with sub items<ol class="arabic">
-<li>make sure to line up the first subm with the first character of parent line</li>
-<li>more sub</li>
+<li><p>numbered items</p></li>
+<li><p>numbered items with sub items</p>
+<ol class="arabic simple">
+<li><p>make sure to line up the first subm with the first character of parent line</p></li>
+<li><p>more sub</p></li>
 </ol>
 </li>
-<li>non numbered sub items<ul>
-<li>a thing</li>
-<li>another thing</li>
+<li><p>non numbered sub items</p>
+<ul class="simple">
+<li><p>a thing</p></li>
+<li><p>another thing</p></li>
 </ul>
 </li>
 </ol>
