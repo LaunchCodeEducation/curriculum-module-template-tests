@@ -6,24 +6,23 @@ on:
       - main
 
 jobs:
-  build:
+  dependencies_checkout_build_deliver:
     name: Install, Build, Deliver
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out Repository Code
-    - uses: actions/checkout@master
-      with:
-        fetch-depth: 0
+      - name: Check out Repository Code
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 0
 
-    - name: Build Sphinx
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs"
-        build-command: "sphinx-build src docs"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: gh-pages
-        directory: gh-pages
-        github_token: ${{ secrets.TOKEN }}
+      - name: Build Sphinx
+      - uses: ammaraskar/sphinx-action@master
+        with:
+          docs-folder: "docs"
+          build-command: "sphinx-build src docs"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: gh-pages
+          directory: gh-pages
+          github_token: ${{ secrets.TOKEN }}
